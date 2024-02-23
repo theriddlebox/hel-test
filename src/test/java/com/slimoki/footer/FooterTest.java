@@ -47,5 +47,7 @@ public class FooterTest {
         driver.findElement(By.cssSelector(locators.fbCloseBtn)).click();
         Assertions.assertTrue(driver.getTitle().contains(fbPageTitle), "Page title is not: " + fbPageTitle);
         driver.quit();
+
+        System.out.println("Test");
     }
 }
